@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الاشتراكات | CodeCraft 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="subscription">
+  <header class="topbar site-shell">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">VIP</div>
+        <div class="brand-text"><strong>خطط الاشتراك</strong><span>اختر الباقة المناسبة لتقدمك</span></div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="dashboard.html">لوحة الطالب</a>
+        <a class="nav-link" href="profile.html">الملف الشخصي</a>
+        <button id="modeToggle" class="mode-toggle" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <div id="noticeBanner" class="notice-banner" hidden></div>
+
+  <main class="site-shell section">
+      <div class="section-title">
+        <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);">اشتراكات مرنة لكل مستوى</h2>
+      <p>اختر الباقة المناسبة، وسيتم تحويلك مباشرة إلى رقم الاشتراك 01280272177 لطلب كود التفعيل.</p>
+      </div>
+
+    <div class="plans-grid">
+        <article class="plan-card">
+        <h3>Starter</h3>
+        <div class="price">149 <small>جنيه / 30 يوم</small></div>
+        <ul><li>الدروس الأساسية والمتوسطة</li><li>لوحة تقدم شخصية</li><li>3 ألعاب تعليمية</li></ul>
+        <button class="btn secondary" data-select-plan="basic" type="button">اطلب كود التفعيل</button>
+      </article>
+      <article class="plan-card featured">
+        <h3>Pro 3D</h3>
+        <div class="price">349 <small>جنيه / 90 يوم</small></div>
+        <ul><li>كل الدروس الاحترافية</li><li>ألعاب واختبارات كاملة</li><li>تحديات أسبوعية وشارات</li></ul>
+        <button class="btn" data-select-plan="pro" type="button">اطلب كود التفعيل</button>
+      </article>
+      <article class="plan-card">
+        <h3>Elite Academy</h3>
+        <div class="price">999 <small>جنيه / 365 يوم</small></div>
+        <ul><li>وصول سنوي كامل</li><li>محتوى حصري ومسارات جديدة</li><li>أولوية في المشاريع المتقدمة</li></ul>
+        <button class="btn success" data-select-plan="elite" type="button">اطلب كود التفعيل</button>
+      </article>
+    </div>
+
+    <section class="section">
+      <div class="dashboard-grid">
+        <article class="card highlight">
+          <h3>طريقة الاشتراك والتفعيل</h3>
+          <ul class="feature-list"><li>اختر الباقة المناسبة لك.</li><li>سيتم تحويلك تلقائيًا إلى واتساب الرقم 01280272177.</li><li>أرسل بياناتك وسيصلك كود التفعيل الخاص باشتراكك.</li><li>ادخل الكود هنا لتفعيل المحتوى المدفوع وفتح الفيديوهات والاختبارات.</li></ul>
+        </article>
+        <article class="card">
+          <h3>حالة اشتراكك الحالية</h3>
+          <p>الباقة: <strong data-plan-name>لم يتم الاختيار بعد</strong></p>
+          <p>الحالة: <strong data-plan-status>غير مفعل</strong></p>
+          <p>تاريخ الانتهاء: <strong data-plan-expire>غير متاح</strong></p>
+          <p>كود الطلب: <strong data-request-code>سيظهر بعد طلب الاشتراك</strong></p>
+          <form id="activationForm" class="auth-form" style="margin-top:18px;">
+            <div class="field"><label for="activationCode">كود التفعيل</label><input id="activationCode" type="text" placeholder="CC-PRO-XXXXXX" required></div>
+            <button class="btn" type="submit">تفعيل الاشتراك</button>
+          </form>
+          <p id="activationHint" class="inline-note">بعد اختيار أي باقة سيتم تجهيز رسالة تلقائية على واتساب لطلب الكود.</p>
+          <div class="inline-actions"><a class="btn secondary" href="dashboard.html">العودة إلى لوحة الطالب</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-note site-shell"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>

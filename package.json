@@ -1,0 +1,13 @@
+{
+  "name": "codecraft-3d-platform",
+  "version": "1.0.0",
+  "description": "CodeCraft 3D educational platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check js/site.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حساب جديد | CodeCraft 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+  <header class="topbar site-shell">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">+</div>
+        <div class="brand-text"><strong>إنشاء حساب جديد</strong><span>ابدأ التعلم بخطة مناسبة لك</span></div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="login.html">تسجيل الدخول</a>
+        <button id="modeToggle" class="mode-toggle" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <div id="noticeBanner" class="notice-banner" hidden></div>
+
+  <main class="site-shell auth-layout">
+    <section class="auth-panel">
+      <span class="eyebrow">خطوة البداية</span>
+      <h1>أنشئ حسابك وابدأ رحلتك في البرمجة المتقدمة.</h1>
+      <p>املأ البيانات التالية ليتم حفظ حسابك وربطه بالاشتراك والتقدم تلقائيًا.</p>
+      <form class="auth-form" id="registerForm">
+        <div class="field"><label for="name">الاسم الكامل</label><input id="name" type="text" placeholder="اكتب اسمك" required></div>
+        <div class="field"><label for="registerEmail">البريد الإلكتروني</label><input id="registerEmail" type="email" placeholder="name@example.com" required></div>
+        <div class="field"><label for="phone">رقم الهاتف</label><input id="phone" type="tel" placeholder="01xxxxxxxxx" required></div>
+        <div class="field"><label for="track">المسار المفضل</label><select id="track" required><option value="">اختر المسار</option><option value="Frontend">Frontend</option><option value="Backend">Backend</option><option value="Full Stack">Full Stack</option></select></div>
+        <div class="field"><label for="level">المستوى الحالي</label><select id="level" required><option value="">اختر المستوى</option><option value="مبتدئ">مبتدئ</option><option value="متوسط">متوسط</option><option value="متقدم">متقدم</option></select></div>
+        <div class="field"><label for="goal">الهدف الأساسي</label><input id="goal" type="text" placeholder="مثال: بناء مواقع احترافية" required></div>
+        <div class="field"><label for="registerPassword">كلمة المرور</label><input id="registerPassword" type="password" placeholder="اكتب كلمة مرور قوية" required></div>
+        <div class="auth-actions"><button class="btn" type="submit">إنشاء الحساب</button><a class="btn secondary" href="index.html">العودة للرئيسية</a></div>
+      </form>
+    </section>
+
+    <aside class="auth-aside">
+      <section class="card highlight">
+        <h3>عند إنشاء الحساب ستحصل على</h3>
+        <ul class="auth-list"><li>صفحة شخصية فيها بياناتك وإنجازاتك.</li><li>اقتراح لمسار يناسب مستواك وهدفك.</li><li>إمكانية اختيار الاشتراك ثم طلب كود التفعيل من الإدارة.</li></ul>
+      </section>
+      <section class="auth-visual">
+        <div class="floating-cube"></div>
+        <div class="floating-panel small"><div class="eyebrow">ملف شخصي ذكي</div><p class="muted" style="margin-top:16px;">يتم تجهيز لوحة الطالب وحالة التقدم مباشرة بعد إنشاء الحساب.</p></div>
+      </section>
+    </aside>
+  </main>
+
+  <div class="footer-note site-shell"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>

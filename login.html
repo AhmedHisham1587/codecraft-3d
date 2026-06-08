@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول | CodeCraft 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <header class="topbar site-shell">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">CC</div>
+        <div class="brand-text"><strong>CodeCraft 3D</strong><span>دخول سريع إلى لوحة التعلم</span></div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="register.html">حساب جديد</a>
+        <button id="modeToggle" class="mode-toggle" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <div id="noticeBanner" class="notice-banner" hidden></div>
+
+  <main class="site-shell auth-layout">
+    <section class="auth-panel">
+      <span class="eyebrow">مرحبًا بعودتك</span>
+      <h1>سجل دخولك وارجع مباشرة إلى رحلتك البرمجية.</h1>
+      <p>الدخول يعطيك وصولًا إلى لوحة التقدم، حالة اشتراكك، ومكتبة الدروس والاختبارات بعد التفعيل.</p>
+      <form class="auth-form" id="loginForm">
+        <div class="field"><label for="email">البريد الإلكتروني</label><input id="email" type="email" placeholder="name@example.com" required></div>
+        <div class="field"><label for="password">كلمة المرور</label><input id="password" type="password" placeholder="اكتب كلمة المرور" required></div>
+        <div class="auth-actions">
+          <button class="btn" type="submit">تسجيل الدخول</button>
+          <a class="btn secondary" href="register.html">إنشاء حساب</a>
+        </div>
+      </form>
+      <p style="margin-top:18px;">ليس لديك حساب؟ <a href="register.html" style="color:var(--primary);">أنشئ حسابًا جديدًا</a></p>
+      <section class="card" style="margin-top:20px;">
+        <h3>استرجاع كلمة المرور</h3>
+        <p class="inline-note">اكتب البريد الإلكتروني ورقم الهاتف المسجلين ثم أدخل كلمة مرور جديدة.</p>
+        <form class="auth-form" id="resetPasswordForm">
+          <div class="field"><label for="resetEmail">البريد الإلكتروني</label><input id="resetEmail" type="email" placeholder="name@example.com" required></div>
+          <div class="field"><label for="resetPhone">رقم الهاتف</label><input id="resetPhone" type="tel" placeholder="01xxxxxxxxx" required></div>
+          <div class="field"><label for="newPassword">كلمة المرور الجديدة</label><input id="newPassword" type="password" placeholder="اكتب كلمة مرور جديدة" required></div>
+          <button class="btn secondary" type="submit">تحديث كلمة المرور</button>
+        </form>
+      </section>
+    </section>
+
+    <aside class="auth-aside">
+      <section class="card">
+        <h3>بعد تسجيل الدخول ستحصل على</h3>
+        <ul class="auth-list"><li>لوحة تحكم تعرض تقدمك اليومي.</li><li>وصول محمي للصفحات الخاصة بك فقط.</li><li>إدارة سهلة للاشتراك والتفعيل والاختبارات.</li></ul>
+      </section>
+      <section class="auth-visual">
+        <div class="floating-cube"></div>
+        <div class="floating-panel large"><div class="eyebrow">جاهز للدخول</div><p class="muted" style="margin-top:16px;">واجهة مميزة، منظمة، وسريعة حتى على الهاتف.</p></div>
+      </section>
+    </aside>
+  </main>
+
+  <div class="footer-note site-shell"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>

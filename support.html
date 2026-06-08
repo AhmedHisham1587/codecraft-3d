@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدعم الفني | CodeCraft 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="support">
+  <header class="topbar site-shell">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">ST</div>
+        <div class="brand-text"><strong>الدعم الفني</strong><span>أرسل المشكلة وتابع المحادثة من نفس الصفحة</span></div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="dashboard.html" data-auth-only hidden>لوحة الطالب</a>
+        <a class="nav-link" href="profile.html" data-auth-only hidden>الملف الشخصي</a>
+        <a class="nav-link" href="login.html" data-guest-only>تسجيل الدخول</a>
+        <button id="modeToggle" class="mode-toggle" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <div id="noticeBanner" class="notice-banner" hidden></div>
+
+  <main class="site-shell section auth-layout">
+    <section class="auth-panel">
+      <span class="eyebrow">مساعدة سريعة</span>
+      <h1>أرسل مشكلتك لفريق الدعم الفني</h1>
+      <p>إذا واجهتك مشكلة في تسجيل الدخول أو التفعيل أو تشغيل الدروس، اكتب التفاصيل هنا وسنراجعها من لوحة الإدارة مباشرة.</p>
+      <form id="supportForm" class="auth-form">
+        <div class="field"><label for="supportName">الاسم</label><input id="supportName" type="text" required></div>
+        <div class="field"><label for="supportEmail">البريد الإلكتروني</label><input id="supportEmail" type="email" required></div>
+        <div class="field"><label for="supportPhone">رقم الهاتف</label><input id="supportPhone" type="tel" required></div>
+        <div class="field">
+          <label for="supportSubject">نوع المشكلة</label>
+          <select id="supportSubject" required>
+            <option value="">اختر نوع المشكلة</option>
+            <option value="مشكلة في تسجيل الدخول">مشكلة في تسجيل الدخول</option>
+            <option value="مشكلة في كود التفعيل">مشكلة في كود التفعيل</option>
+            <option value="مشكلة في الدفع أو الاشتراك">مشكلة في الدفع أو الاشتراك</option>
+            <option value="مشكلة في تشغيل الفيديوهات">مشكلة في تشغيل الفيديوهات</option>
+            <option value="مشكلة عامة في الموقع">مشكلة عامة في الموقع</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="supportMessage">شرح المشكلة</label>
+          <textarea id="supportMessage" rows="6" required placeholder="اكتب ما الذي حدث، ومتى ظهرت المشكلة، وما الصفحة التي كنت تفتحها."></textarea>
+        </div>
+        <div class="inline-actions">
+          <button class="btn" type="submit">إرسال طلب الدعم</button>
+          <a id="supportWhatsappBtn" class="btn secondary" href="https://wa.me/201280272177" target="_blank" rel="noreferrer">واتساب مباشر</a>
+        </div>
+      </form>
+    </section>
+
+    <aside class="auth-aside">
+      <article class="card highlight">
+        <h3>متابعة التذكرة والمحادثة</h3>
+        <p class="inline-note">اكتب رقم التذكرة والبريد الإلكتروني الذي استخدمته عند إرسال المشكلة.</p>
+        <form id="trackTicketForm" class="auth-form">
+          <div class="field"><label for="trackTicketId">رقم التذكرة</label><input id="trackTicketId" type="text" placeholder="مثل 12 أو #12" required></div>
+          <div class="field"><label for="trackTicketEmail">البريد الإلكتروني</label><input id="trackTicketEmail" type="email" required></div>
+          <button class="btn secondary" type="submit">عرض التذكرة</button>
+        </form>
+        <div id="ticketStatusCard" class="mini-card" hidden>
+          <p>رقم التذكرة: <strong data-ticket-id>-</strong></p>
+          <p>الموضوع: <strong data-ticket-subject>-</strong></p>
+          <p>الحالة: <strong data-ticket-status>-</strong></p>
+          <p>تاريخ الإنشاء: <strong data-ticket-created>-</strong></p>
+          <p>آخر تحديث: <strong data-ticket-updated>-</strong></p>
+          <div id="ticketConversation" class="ticket-conversation"></div>
+          <form id="ticketReplyForm" class="auth-form" style="margin-top:16px;">
+            <div class="field">
+              <label for="ticketReplyMessage">أضف متابعة جديدة</label>
+              <textarea id="ticketReplyMessage" rows="4" placeholder="اكتب أي تفاصيل إضافية أو رد على الإدارة..."></textarea>
+            </div>
+            <button class="btn secondary" type="submit">إرسال المتابعة</button>
+          </form>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>متى تستخدم الدعم الفني؟</h3>
+        <ul class="auth-list">
+          <li>إذا لم يعمل تسجيل الدخول أو التسجيل.</li>
+          <li>إذا لم يعمل طلب كود التفعيل أو الكود نفسه.</li>
+          <li>إذا ظهرت مشكلة في الفيديوهات أو الاختبارات.</li>
+          <li>إذا كان الموقع لا يعمل جيدًا على جهازك.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>معلومة مهمة</h3>
+        <p class="inline-note">بعد إرسال الطلب سيظهر لك رقم التذكرة، ويمكنك أيضًا متابعة التواصل عبر واتساب على رقم الإدارة <strong>01280272177</strong>.</p>
+      </article>
+    </aside>
+  </main>
+
+  <div class="footer-note site-shell"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة الطالب | CodeCraft 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+  <header class="topbar site-shell">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">DB</div>
+        <div class="brand-text"><strong>لوحة الطالب</strong><span>كل ما يخص تقدمك في مكان واحد</span></div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="videos.html">الدروس</a>
+        <a class="nav-link" href="exams.html">الاختبارات</a>
+        <a class="nav-link" href="profile.html">الملف الشخصي</a>
+        <a class="nav-link" href="subscription.html">الاشتراكات</a>
+        <a class="nav-link" href="support.html">الدعم الفني</a>
+        <button id="modeToggle" class="mode-toggle" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <div id="noticeBanner" class="notice-banner" hidden></div>
+
+  <main class="site-shell section">
+    <div class="section-title">
+      <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);">أهلًا <span data-user-name>بك</span></h2>
+      <p>هنا ترى مستوى تقدمك، حالة اشتراكك، وما الذي يجب أن تفتحه بعد ذلك.</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <section class="card highlight card-3d">
+        <h3>تقدمك الحالي</h3>
+        <p>نسبة الإنجاز: <strong data-progress-value>0%</strong></p>
+        <div class="progress-wrap"><div class="progress-bar"><span data-progress-bar></span></div></div>
+        <div class="chip-row" style="margin-top:18px;">
+          <span class="chip">المسار: <span data-user-track></span></span>
+          <span class="chip">المستوى: <span data-user-level></span></span>
+          <span class="chip">الهدف: <span data-user-goal></span></span>
+        </div>
+      </section>
+      <section class="card">
+        <h3>الاشتراك الحالي</h3>
+        <p>الباقة: <strong data-plan-name>Starter</strong></p>
+        <p>الحالة: <strong data-plan-status>غير مفعل</strong></p>
+        <p>ينتهي في: <strong data-plan-expire>غير متاح</strong></p>
+        <div class="inline-actions"><a class="btn secondary" href="subscription.html">تغيير الخطة</a></div>
+      </section>
+    </div>
+
+    <section class="section">
+      <div id="notificationCenter" class="card" hidden style="margin-bottom:18px;">
+        <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+          <div>
+            <h3 style="margin:0 0 8px;">إشعاراتك</h3>
+            <p class="inline-note" style="margin:0;">لديك <strong data-unread-notifications>0</strong> إشعار غير مقروء.</p>
+          </div>
+          <button id="markNotificationsReadBtn" class="btn secondary" type="button">تعليم الكل كمقروء</button>
+        </div>
+        <div id="notificationList" class="notification-list" style="margin-top:18px;"></div>
+      </div>
+
+      <div id="dashboardSupportCard" class="card highlight" hidden style="margin-bottom:18px;">
+        <h3>آخر طلب دعم فني</h3>
+        <p>رقم التذكرة: <strong data-dashboard-ticket-id>-</strong></p>
+        <p>الموضوع: <strong data-dashboard-ticket-subject>-</strong></p>
+        <p>الحالة الحالية: <strong data-dashboard-ticket-status>-</strong></p>
+        <p>آخر تحديث: <strong data-dashboard-ticket-updated>-</strong></p>
+        <p id="dashboardSupportReply" class="inline-note" hidden></p>
+        <div class="inline-actions">
+          <a class="btn secondary" href="support.html">فتح صفحة الدعم الفني</a>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card"><span>الدروس المكتملة</span><strong data-completed-count>0</strong><span>من أصل <span data-total-lessons>0</span> درس داخل المسارات الحالية.</span></article>
+        <article class="stat-card"><span>الإنجازات</span><strong data-achievements>0</strong><span>ترتفع مع إنهاء الدروس والاختبارات.</span></article>
+        <article class="stat-card"><span>وضعك الحالي</span><strong data-user-level>---</strong><span>تم تحديده من بيانات التسجيل.</span></article>
+        <article class="stat-card"><span>المسار</span><strong data-user-track>---</strong><span>يمكنك الاستمرار عليه أو تغيير الخطة.</span></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="features-grid">
+        <article class="card"><h3>الخطوة التالية</h3><p>فعّل اشتراكك أولًا إذا لم يكن مفعلًا، ثم ادخل إلى مكتبة الفيديوهات الكبيرة وابدأ التقدم.</p><a class="btn" href="videos.html">الذهاب إلى الدروس</a></article>
+        <article class="card"><h3>الألعاب التعليمية</h3><p>يوجد قسم واضح للألعاب التعليمية داخل الصفحة الرئيسية كجزء من هوية المنصة.</p><a class="btn secondary" href="index.html#games">استعراض الفكرة</a></article>
+        <article class="card"><h3>إدارة الحساب</h3><p>راجع بياناتك، رقم الهاتف، وإنجازاتك والبريد المرتبط بحسابك من الملف الشخصي.</p><a class="btn secondary" href="profile.html">فتح الملف الشخصي</a></article>
+        <article class="card"><h3>الدعم الفني</h3><p>إذا ظهرت أي مشكلة في التفعيل أو الدخول أو تشغيل المحتوى، أرسل تذكرة دعم من صفحة مخصصة أو تواصل واتساب مباشرة.</p><a class="btn secondary" href="support.html">فتح الدعم الفني</a></article>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-note site-shell"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>

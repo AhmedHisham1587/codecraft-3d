@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدروس | CodeCraft 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="videos">
+  <header class="topbar site-shell">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">LS</div>
+        <div class="brand-text"><strong>الدروس التفاعلية</strong><span>تعلم ثم افتح الاختبار مباشرة</span></div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="dashboard.html">لوحة الطالب</a>
+        <a class="nav-link" href="exams.html">الاختبارات</a>
+        <a class="nav-link" href="profile.html">الملف الشخصي</a>
+        <a class="nav-link" href="subscription.html">الاشتراكات</a>
+        <button id="modeToggle" class="mode-toggle" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <div id="noticeBanner" class="notice-banner" hidden></div>
+
+  <main class="site-shell section">
+    <section class="card video-hero">
+      <div class="section-title" style="margin-bottom:0;">
+        <span class="eyebrow">مكتبة المنصة</span>
+        <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);">مكتبة الفيديوهات التعليمية</h2>
+        <p>المسارات الآن مرتبة داخل المنصة مع مشغل داخل الصفحة، وتنقل سريع، وتجربة أوضح بين Frontend و Backend و Full Stack، مع اختيار لغة الشرح.</p>
+      </div>
+      <div id="videoLanguageSwitch" class="video-language-switch"></div>
+      <div id="trackQuickNav" class="track-quick-nav"></div>
+    </section>
+
+    <section id="inlineLessonPlayer" class="card lesson-player-shell">
+      <div class="lesson-player-head">
+        <div>
+          <span class="status-pill">مشغل الدروس داخل المنصة</span>
+          <h3 id="inlineLessonTitle">اختر درسًا من المسار</h3>
+          <p id="inlineLessonSummary" class="muted">اختر أي درس من الأسفل، وسيعمل هنا مباشرة داخل المنصة بدون فتح نافذة جديدة.</p>
+        </div>
+        <div class="lesson-player-side">
+          <div id="inlineLessonMeta" class="chip-row"></div>
+          <button id="clearLessonPlayerBtn" class="btn secondary" type="button" hidden>إخفاء الدرس</button>
+        </div>
+      </div>
+      <div class="lesson-player-frame-wrap">
+        <div id="inlineLessonPlaceholder" class="lesson-player-placeholder">
+          <strong>ابدأ من أي درس يناسبك</strong>
+          <p>اضغط على زر مشاهدة الدرس داخل البطاقة، وسيظهر الشرح هنا في نفس الصفحة.</p>
+        </div>
+        <iframe
+          id="inlineLessonFrame"
+          class="lesson-player-frame"
+          src=""
+          title="مشغل الدرس"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          hidden
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </section>
+
+    <div id="videoLibrary" class="lessons-grid"></div>
+
+    <section class="section">
+      <div class="dashboard-grid">
+        <article class="card"><h3>حالة التقدم</h3><p>نسبة الإنجاز الحالية: <strong data-progress-value>0%</strong></p><div class="progress-wrap"><div class="progress-bar"><span data-progress-bar></span></div></div></article>
+        <article class="card"><h3>نصيحة تعليمية</h3><p>بعد كل فيديو أكمل تأكيد المشاهدة ثم انتقل إلى الاختبارات لتثبيت الفهم ورفع الإنجازات.</p><div class="inline-actions"><a class="btn secondary" href="exams.html">فتح الاختبارات</a></div></article>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-note site-shell"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>

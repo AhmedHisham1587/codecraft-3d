@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الملف الشخصي | CodeCraft 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="profile">
+  <header class="topbar site-shell">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">ME</div>
+        <div class="brand-text"><strong>الملف الشخصي</strong><span>بيانات الحساب والإنجازات</span></div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="dashboard.html">لوحة الطالب</a>
+        <a class="nav-link" href="videos.html">الدروس</a>
+        <a class="nav-link" href="subscription.html">الاشتراكات</a>
+        <a class="nav-link" href="support.html">الدعم الفني</a>
+        <button id="modeToggle" class="mode-toggle" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <div id="noticeBanner" class="notice-banner" hidden></div>
+
+  <main class="site-shell section profile-grid">
+    <section class="card highlight">
+      <div class="profile-header">
+        <div class="avatar" style="display:grid;place-items:center;font-size:2rem;font-weight:800;" data-user-initials>ط</div>
+        <div>
+          <h2 style="margin:0 0 8px;"><span data-user-name>المستخدم</span></h2>
+          <p class="muted" style="margin:0;">البريد: <span data-user-email></span></p>
+          <p class="muted" style="margin:8px 0 0;">الهاتف: <span data-user-phone></span></p>
+          <p class="muted" style="margin:8px 0 0;">الخطة: <span data-plan-name>Starter</span></p>
+        </div>
+      </div>
+      <div class="badge-list">
+        <span class="badge">المسار: <span data-user-track></span></span>
+        <span class="badge">المستوى: <span data-user-level></span></span>
+        <span class="badge">الهدف: <span data-user-goal></span></span>
+      </div>
+      <div class="progress-wrap">
+        <p>نسبة التقدم: <strong data-progress-value>0%</strong></p>
+        <div class="progress-bar"><span data-progress-bar></span></div>
+      </div>
+    </section>
+
+    <section class="auth-aside">
+      <article class="card">
+        <h3>إنجازاتك</h3>
+        <p>عدد الإنجازات: <strong data-achievements>0</strong></p>
+        <p>الدروس المكتملة: <strong data-completed-count>0</strong></p>
+        <p>الاختبارات المجتازة: <strong data-passed-exams>0</strong></p>
+        <p>حالة الاشتراك: <strong data-plan-status>غير مفعل</strong></p>
+        <p>ينتهي الاشتراك في: <strong data-plan-expire>غير متاح</strong></p>
+      </article>
+      <article class="card">
+        <h3>تعديل بيانات الحساب</h3>
+        <form class="auth-form" id="profileUpdateForm">
+          <div class="field"><label for="profileName">الاسم الكامل</label><input id="profileName" type="text" required></div>
+          <div class="field"><label for="profileEmail">البريد الإلكتروني</label><input id="profileEmail" type="email" required></div>
+          <div class="field"><label for="profilePhone">رقم الهاتف</label><input id="profilePhone" type="tel" required></div>
+          <div class="field"><label for="profileTrack">المسار</label><select id="profileTrack" required><option value="Frontend">Frontend</option><option value="Backend">Backend</option><option value="Full Stack">Full Stack</option></select></div>
+          <div class="field"><label for="profileLevel">المستوى</label><select id="profileLevel" required><option value="مبتدئ">مبتدئ</option><option value="متوسط">متوسط</option><option value="متقدم">متقدم</option></select></div>
+          <div class="field"><label for="profileGoal">الهدف</label><input id="profileGoal" type="text" required></div>
+          <div class="inline-actions"><button class="btn" type="submit">حفظ التعديلات</button><button class="btn danger" id="logoutBtn" type="button">تسجيل الخروج</button></div>
+        </form>
+        <div class="inline-actions"><a class="btn secondary" href="dashboard.html">رجوع للوحة</a></div>
+      </article>
+    </section>
+  </main>
+
+  <div class="footer-note site-shell"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>

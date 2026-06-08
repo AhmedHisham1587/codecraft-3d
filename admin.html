@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة الإدارة | CodeCraft 3D</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin">
+  <header class="topbar site-shell">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">AD</div>
+        <div class="brand-text"><strong>لوحة الإدارة</strong><span>إدارة أكواد التفعيل المخفية</span></div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="login.html">دخول الطلاب</a>
+        <button id="modeToggle" class="mode-toggle" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <div id="noticeBanner" class="notice-banner" hidden></div>
+
+  <main class="site-shell section">
+    <section id="adminLoginPanel" class="auth-panel" style="max-width:720px;margin:0 auto;">
+      <span class="eyebrow">للإدارة فقط</span>
+      <h1>تسجيل دخول الأدمن</h1>
+      <p>هذه الصفحة تعرض الأكواد المتبقية والمستخدمة ولا تظهر للطلاب.</p>
+      <form id="adminLoginForm" class="auth-form">
+        <div class="field"><label for="adminUsername">اسم المستخدم</label><input id="adminUsername" type="text" placeholder="admin" required></div>
+        <div class="field"><label for="adminPassword">كلمة المرور</label><input id="adminPassword" type="password" placeholder="كلمة مرور الإدارة" required></div>
+        <button class="btn" type="submit">دخول لوحة الإدارة</button>
+      </form>
+    </section>
+
+    <section id="adminPanel" hidden>
+      <div class="section-title">
+        <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);">أكواد التفعيل</h2>
+        <p>مراجعة الأكواد المتاحة والمستخدمة مع البريد الذي استهلك كل كود.</p>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card"><span>إجمالي الأكواد</span><strong data-admin-total>0</strong><span>كل الأكواد المخزنة في قاعدة البيانات.</span></article>
+        <article class="stat-card"><span>المتاحة</span><strong data-admin-available>0</strong><span>جاهزة للإرسال للمشتركين.</span></article>
+        <article class="stat-card"><span>المستخدمة</span><strong data-admin-used>0</strong><span>تم استهلاكها بالفعل.</span></article>
+        <article class="stat-card"><span>الموقوفة / الطلبات</span><strong data-admin-disabled>0</strong><span>الموقوفة حاليًا مع طلبات الاشتراك المعلقة: <span data-admin-pending>0</span></span></article>
+        <article class="stat-card"><span>تذاكر الدعم المفتوحة</span><strong data-admin-open-tickets>0</strong><span>طلبات المساعدة التي تحتاج متابعة الآن.</span></article>
+        <article class="stat-card"><span>حظر تسجيل الدخول</span><strong data-admin-locked-logins>0</strong><span>حسابات محظورة مؤقتًا بسبب تكرار كلمة المرور الغلط.</span></article>
+      </div>
+
+      <section class="section" style="padding-top:24px;">
+        <div class="section-title">
+          <h3 style="font-size:clamp(1.3rem,3vw,2rem);margin:0;">إحصائيات المنصة</h3>
+          <p>متابعة سريعة لحركة الطلاب والاشتراكات والمحتوى والدعم.</p>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card"><span>عدد الطلاب</span><strong data-analytics-students>0</strong><span>إجمالي الحسابات المسجلة داخل المنصة.</span></article>
+          <article class="stat-card"><span>الاشتراكات النشطة</span><strong data-analytics-active-subscriptions>0</strong><span>طلاب لديهم اشتراك مفعل حتى الآن.</span></article>
+          <article class="stat-card"><span>طلبات الدعم</span><strong data-analytics-support-tickets>0</strong><span>إجمالي التذاكر الواردة إلى الدعم الفني.</span></article>
+          <article class="stat-card"><span>مشاهدات الدروس</span><strong data-analytics-completed-lessons>0</strong><span>إجمالي مرات إكمال الدروس المسجلة.</span></article>
+        </div>
+
+        <div class="dashboard-grid" style="margin-top:18px;">
+          <article class="card">
+            <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+              <h3 style="margin:0;">أكثر المشاكل تكرارًا</h3>
+              <span class="status-pill">من طلبات الدعم</span>
+            </div>
+            <div id="topIssuesList" class="analytics-list" style="margin-top:18px;"></div>
+          </article>
+          <article class="card">
+            <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+              <h3 style="margin:0;">أكثر الدروس مشاهدة</h3>
+              <span class="status-pill">من تقدم الطلاب</span>
+            </div>
+            <div id="topLessonsList" class="analytics-list" style="margin-top:18px;"></div>
+          </article>
+        </div>
+
+        <div class="dashboard-grid" style="margin-top:18px;">
+          <article class="card">
+            <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+              <h3 style="margin:0;">اشتراكات منتهية</h3>
+              <span class="status-pill">تحتاج تجديد</span>
+            </div>
+            <div id="expiredSubscriptionsList" class="analytics-list" style="margin-top:18px;"></div>
+          </article>
+          <article class="card">
+            <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+              <h3 style="margin:0;">ستنتهي خلال 3 أيام</h3>
+              <span class="status-pill">تنبيه عاجل</span>
+            </div>
+            <div id="expiring3SubscriptionsList" class="analytics-list" style="margin-top:18px;"></div>
+          </article>
+        </div>
+
+        <article class="card" style="margin-top:18px;">
+          <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+            <h3 style="margin:0;">ستنتهي خلال 7 أيام</h3>
+            <span class="status-pill">تنبيه مبكر</span>
+          </div>
+          <div id="expiring7SubscriptionsList" class="analytics-list" style="margin-top:18px;"></div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="dashboard-grid" style="margin-bottom:18px;">
+          <article class="card highlight">
+            <h3>نسخ سريع لأول كود متاح</h3>
+            <p class="inline-note">اختر الباقة وسيتم نسخ أول كود متاح مباشرة إلى الحافظة.</p>
+            <div class="inline-actions">
+              <button class="btn" type="button" data-copy-plan="basic">نسخ كود Starter</button>
+              <button class="btn secondary" type="button" data-copy-plan="pro">نسخ كود Pro 3D</button>
+              <button class="btn success" type="button" data-copy-plan="elite">نسخ كود Elite</button>
+            </div>
+            <div class="inline-actions">
+              <a class="btn secondary" href="/api/admin/codes/export?format=csv" target="_blank">تصدير CSV</a>
+              <a class="btn secondary" href="/api/admin/codes/export?format=json" target="_blank">تصدير JSON</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>توليد أكواد جديدة</h3>
+            <form id="generateCodesForm" class="auth-form" style="margin-top:18px;">
+              <div class="field">
+                <label for="generatePlanKey">الباقة</label>
+                <select id="generatePlanKey" required>
+                  <option value="basic">Starter</option>
+                  <option value="pro">Pro 3D</option>
+                  <option value="elite">Elite Academy</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="generateCount">عدد الأكواد</label>
+                <input id="generateCount" type="number" min="1" max="100" value="5" required>
+              </div>
+              <button class="btn" type="submit">توليد الأكواد</button>
+            </form>
+          </article>
+        </div>
+
+        <div class="card" style="margin-bottom:18px;">
+          <h3>تغيير كلمة مرور الأدمن</h3>
+          <p class="inline-note">غيّر كلمة مرور الإدارة من هنا بدل تعديل الملفات يدويًا.</p>
+          <form id="adminPasswordForm" class="auth-form" style="margin-top:18px;">
+            <div class="field">
+              <label for="adminCurrentPassword">كلمة المرور الحالية</label>
+              <input id="adminCurrentPassword" type="password" required>
+            </div>
+            <div class="field">
+              <label for="adminNewPassword">كلمة المرور الجديدة</label>
+              <input id="adminNewPassword" type="password" minlength="8" required>
+            </div>
+            <div class="field">
+              <label for="adminConfirmPassword">تأكيد كلمة المرور الجديدة</label>
+              <input id="adminConfirmPassword" type="password" minlength="8" required>
+            </div>
+            <button class="btn" type="submit">تحديث كلمة مرور الأدمن</button>
+          </form>
+        </div>
+
+        <div class="card" style="margin-bottom:18px;">
+          <h3>فلترة جدول الأكواد</h3>
+          <div class="auth-form" style="margin-top:18px;">
+            <div class="field">
+              <label for="adminPlanFilter">الباقة</label>
+              <select id="adminPlanFilter">
+                <option value="all">كل الباقات</option>
+                <option value="basic">Starter</option>
+                <option value="pro">Pro 3D</option>
+                <option value="elite">Elite Academy</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="adminStatusFilter">الحالة</label>
+              <select id="adminStatusFilter">
+                <option value="all">الكل</option>
+                <option value="available">المتاحة فقط</option>
+                <option value="used">المستخدمة فقط</option>
+                <option value="disabled">الموقوفة فقط</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="adminSearchInput">بحث</label>
+              <input id="adminSearchInput" type="text" placeholder="ابحث بالكود أو البريد">
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:18px;">
+          <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+            <h3 style="margin:0;">طلبات الاشتراك المعلقة</h3>
+            <span class="status-pill">بانتظار كود التفعيل</span>
+          </div>
+          <div style="overflow:auto;margin-top:18px;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>الاسم</th>
+                  <th>الباقة</th>
+                  <th>البريد</th>
+                  <th>الهاتف</th>
+                  <th>كود الطلب</th>
+                  <th>آخر تحديث</th>
+                </tr>
+              </thead>
+              <tbody id="adminRequestsTable"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:18px;">
+          <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+            <h3 style="margin:0;">طلبات الدعم الفني</h3>
+            <span class="status-pill">مشاكل الموقع الواردة من الطلاب</span>
+          </div>
+          <div class="auth-form" style="margin-top:18px;">
+            <div class="field">
+              <label for="adminSupportStatusFilter">حالة التذكرة</label>
+              <select id="adminSupportStatusFilter">
+                <option value="all">كل الحالات</option>
+                <option value="open">مفتوحة</option>
+                <option value="in_progress">جارٍ المتابعة</option>
+                <option value="resolved">تم الحل</option>
+                <option value="closed">مغلقة</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="adminSupportSearchInput">بحث في التذاكر</label>
+              <input id="adminSupportSearchInput" type="text" placeholder="ابحث بالاسم أو البريد أو الموضوع أو رقم التذكرة">
+            </div>
+          </div>
+          <div style="overflow:auto;margin-top:18px;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>رقم التذكرة</th>
+                  <th>الاسم</th>
+                  <th>البريد</th>
+                  <th>الهاتف</th>
+                  <th>الموضوع</th>
+                  <th>التفاصيل</th>
+                  <th>رد الإدارة</th>
+                  <th>الحالة</th>
+                  <th>إجراء</th>
+                </tr>
+              </thead>
+              <tbody id="adminSupportTable"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:18px;">
+          <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+            <h3 style="margin:0;">الحسابات المحظورة مؤقتًا</h3>
+            <span class="status-pill">فك الحظر من الإدارة</span>
+          </div>
+          <div style="overflow:auto;margin-top:18px;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>الاسم</th>
+                  <th>البريد</th>
+                  <th>عدد المحاولات</th>
+                  <th>آخر محاولة</th>
+                  <th>الحظر حتى</th>
+                  <th>إجراء</th>
+                </tr>
+              </thead>
+              <tbody id="adminLoginLocksTable"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:18px;">
+          <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+            <h3 style="margin:0;">سجل نشاط الأدمن</h3>
+            <span class="status-pill">آخر العمليات داخل لوحة الإدارة</span>
+          </div>
+          <div style="overflow:auto;margin-top:18px;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>الوقت</th>
+                  <th>المسؤول</th>
+                  <th>النشاط</th>
+                  <th>التفاصيل</th>
+                </tr>
+              </thead>
+              <tbody id="adminActivityTable"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:18px;">
+          <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+            <h3 style="margin:0;">إدارة الطلاب</h3>
+            <span class="status-pill">بحث ومتابعة حالة الحسابات</span>
+          </div>
+          <div class="auth-form" style="margin-top:18px;">
+            <div class="field">
+              <label for="adminStudentsStatusFilter">حالة الاشتراك</label>
+              <select id="adminStudentsStatusFilter">
+                <option value="all">كل الحالات</option>
+                <option value="active">مفعل</option>
+                <option value="pending_activation">بانتظار التفعيل</option>
+                <option value="inactive">غير مفعل</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="adminStudentsSearchInput">بحث في الطلاب</label>
+              <input id="adminStudentsSearchInput" type="text" placeholder="ابحث بالاسم أو البريد أو الهاتف أو المسار">
+            </div>
+          </div>
+          <div style="overflow:auto;margin-top:18px;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>الطالب</th>
+                  <th>البريد</th>
+                  <th>الهاتف</th>
+                  <th>المسار / المستوى</th>
+                  <th>الاشتراك</th>
+                  <th>التقدم</th>
+                  <th>آخر ظهور</th>
+                </tr>
+              </thead>
+              <tbody id="adminStudentsTable"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:18px;">
+          <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+            <h3 style="margin:0;">النسخ الاحتياطية</h3>
+            <span class="status-pill">استعادة قاعدة البيانات من اللوحة</span>
+          </div>
+          <div style="overflow:auto;margin-top:18px;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>اسم النسخة</th>
+                  <th>الحجم</th>
+                  <th>آخر تعديل</th>
+                  <th>إجراء</th>
+                </tr>
+              </thead>
+              <tbody id="adminBackupsTable"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="inline-actions" style="justify-content:space-between;align-items:center;">
+            <h3 style="margin:0;">جدول الأكواد</h3>
+            <button id="adminLogoutBtn" class="btn danger" type="button">تسجيل خروج الإدارة</button>
+          </div>
+          <div style="overflow:auto;margin-top:18px;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>الكود</th>
+                  <th>الباقة</th>
+                  <th>الحالة</th>
+                  <th>استخدم بواسطة</th>
+                  <th>وقت الاستخدام</th>
+                  <th>إجراء</th>
+                </tr>
+              </thead>
+              <tbody id="adminCodesTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div class="footer-note site-shell"></div>
+  <script src="js/site.js"></script>
+</body>
+</html>
