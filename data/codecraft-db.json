@@ -1,0 +1,1492 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "AHLY PREPAID",
+      "email": "qazwsx147@gmail.com",
+      "phone": "01280272177",
+      "track": "Frontend",
+      "level": "مبتدئ",
+      "goal": "بناء موقع",
+      "passwordHash": "6134e1f7c4ae160e66fed4dbafb34aafa23bb017e04c0acaec02f95ab653054351f97c620cbb37ec849196c35e27db7f5acd8dce04a9442683410443310178ef",
+      "salt": "10843dc232124abdc1cf1bf54c5d36bc",
+      "createdAt": "2026-04-20T23:19:27.912Z"
+    },
+    {
+      "id": 7,
+      "name": "Modal Test",
+      "email": "frontmodal1778111562527@example.com",
+      "phone": "01234567890",
+      "track": "Frontend",
+      "level": "مبتدئ",
+      "goal": "modal test",
+      "passwordHash": "77dca3053c5bdfbd008e2daab0c4d2ec046b2271221c28be3e4c33e88996614eddd76496621855bb558ab0931a81a316941b573a08a0a072a197cedfde957491",
+      "salt": "f9ec6eb2e3e669f567e1a2559a406ff3",
+      "createdAt": "2026-05-06T23:52:42.645Z"
+    },
+    {
+      "id": 8,
+      "name": "Modal Test",
+      "email": "frontmodal1778111575936@example.com",
+      "phone": "01234567891",
+      "track": "Frontend",
+      "level": "مبتدئ",
+      "goal": "modal test",
+      "passwordHash": "0add6f6eb766a8097efb39eacf6ed50ff11bb1d3eb077954b74697104dde83d8941c04769c226f2cd5d85dd76e28b6dca00a2b5f16b2361b004808edc115e04e",
+      "salt": "a739e65a05015d2a18172f77f7e9a932",
+      "createdAt": "2026-05-06T23:52:55.990Z"
+    },
+    {
+      "id": 9,
+      "name": "Modal Test",
+      "email": "frontmodal1778111592643@example.com",
+      "phone": "01234567892",
+      "track": "Frontend",
+      "level": "مبتدئ",
+      "goal": "modal test",
+      "passwordHash": "3ae646b961203daae62be56450cdbcfa29ec25ef791f36195793849c794ed8b635b09cab2fddbb8b6110ef1c56987ec7545ddfa4bd61ed296ccc4d1be8f2fb6c",
+      "salt": "3fbca90bc04b69e2a93e5b6e2078d010",
+      "createdAt": "2026-05-06T23:53:12.697Z"
+    },
+    {
+      "id": 10,
+      "name": "abdomohamed",
+      "email": "asdfg12@gmail.com",
+      "phone": "01018457638+20",
+      "track": "Frontend",
+      "level": "مبتدئ",
+      "goal": "بناء موقع",
+      "passwordHash": "d5b4f71e2ce726e20e1ba923d989615accabcff92f31b55a5ddfdaac48a99d1b617ee24ec9f61a40258d8d402e61db7b071cde8317c051ae6e82d10aed026d0d",
+      "salt": "e639d2dc9904119bb391877f848d37f2",
+      "createdAt": "2026-05-07T00:08:35.282Z"
+    },
+    {
+      "id": 11,
+      "name": "abdomohamed",
+      "email": "ohp9iuhi5o@gmail.com",
+      "phone": "01018457638+20",
+      "track": "Frontend",
+      "level": "مبتدئ",
+      "goal": "بناء موقع",
+      "passwordHash": "0eea3a39276b7d45286751bf1fd85dd0bddf4801b412be493d719506ac44fc40b388e3ff24fd837fc641137250f27a86288d672a05579b56112904bb75f3832a",
+      "salt": "7a72ca75c2696960e4e0b05665b42359",
+      "createdAt": "2026-05-22T00:03:44.132Z"
+    },
+    {
+      "id": 12,
+      "name": "Ahmed Hisham",
+      "email": "evsevscscfsec@gmail.com",
+      "phone": "01280272177",
+      "track": "Frontend",
+      "level": "مبتدئ",
+      "goal": "بناء موقع",
+      "passwordHash": "5eb5a71f5b13270a70cb5b39bf9e537f2d8851d100e0e440ec374ab1ae72e3a5eedfcf8b2267c1294503dae6d769df27fa7e1da6a29cdfa8b3e6567fc74c3f7c",
+      "salt": "ec6603bbe22b9b6a4f95a831df99820b",
+      "createdAt": "2026-06-07T00:18:13.884Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "userId": 2,
+      "status": "active",
+      "label": "Pro 3D",
+      "planKey": "pro",
+      "requestCode": "REQ-MOBQ99GC",
+      "activationCode": "CC-PRO-F68L4S",
+      "expiresAt": "2026-07-22T16:01:03.008Z",
+      "updatedAt": "2026-04-23T17:01:03.008Z"
+    },
+    {
+      "userId": 7,
+      "status": "active",
+      "label": "Starter",
+      "planKey": "basic",
+      "requestCode": "REQ-MOUPPQM6",
+      "activationCode": "CC-BASIC-B12L7Q",
+      "expiresAt": "2026-06-05T23:52:42.758Z",
+      "updatedAt": "2026-05-06T23:52:42.758Z"
+    },
+    {
+      "userId": 8,
+      "status": "active",
+      "label": "Starter",
+      "planKey": "basic",
+      "requestCode": "REQ-MOUPQ0WT",
+      "activationCode": "CC-BASIC-C23M8R",
+      "expiresAt": "2026-06-05T23:52:56.104Z",
+      "updatedAt": "2026-05-06T23:52:56.104Z"
+    },
+    {
+      "userId": 9,
+      "status": "active",
+      "label": "Starter",
+      "planKey": "basic",
+      "requestCode": "REQ-MOUPQDSC",
+      "activationCode": "CC-BASIC-D34N2T",
+      "expiresAt": "2026-06-05T23:53:12.788Z",
+      "updatedAt": "2026-05-06T23:53:12.788Z"
+    },
+    {
+      "userId": 10,
+      "status": "active",
+      "label": "Elite Academy",
+      "planKey": "elite",
+      "requestCode": "REQ-MP696DP9",
+      "activationCode": "CC-ELITE-A25B6H",
+      "expiresAt": "2027-05-15T20:12:00.239Z",
+      "updatedAt": "2026-05-15T20:12:00.239Z"
+    },
+    {
+      "userId": 11,
+      "status": "active",
+      "label": "Elite Academy",
+      "planKey": "elite",
+      "requestCode": "REQ-MPG5QG4K",
+      "activationCode": "CC-ELITE-K24L6S",
+      "expiresAt": "2027-05-22T00:04:28.494Z",
+      "updatedAt": "2026-05-22T00:04:28.494Z"
+    },
+    {
+      "userId": 12,
+      "status": "pending_activation",
+      "label": "Starter",
+      "planKey": "basic",
+      "requestCode": "REQ-MQ31AG06",
+      "activationCode": null,
+      "expiresAt": null,
+      "updatedAt": "2026-06-07T00:18:36.294Z"
+    }
+  ],
+  "progress": [
+    {
+      "userId": 2,
+      "progress": 8,
+      "achievements": 6,
+      "completedLessons": [
+        "backups-recovery",
+        "analytics-panels",
+        "support-system",
+        "careerprep",
+        "client-delivery",
+        "fullstack-capstone"
+      ],
+      "passedExams": []
+    },
+    {
+      "userId": 7,
+      "progress": 0,
+      "achievements": 0,
+      "completedLessons": [],
+      "passedExams": []
+    },
+    {
+      "userId": 8,
+      "progress": 0,
+      "achievements": 0,
+      "completedLessons": [],
+      "passedExams": []
+    },
+    {
+      "userId": 9,
+      "progress": 0,
+      "achievements": 0,
+      "completedLessons": [],
+      "passedExams": []
+    },
+    {
+      "userId": 10,
+      "progress": 10,
+      "achievements": 10,
+      "completedLessons": [
+        "html3d",
+        "semantic-html",
+        "css-layouts",
+        "responsive",
+        "design-system",
+        "accessibility-basics"
+      ],
+      "passedExams": [
+        "html3d",
+        "semantic-html",
+        "css-layouts",
+        "responsive"
+      ]
+    },
+    {
+      "userId": 11,
+      "progress": 4,
+      "achievements": 3,
+      "completedLessons": [
+        "html3d",
+        "design-system"
+      ],
+      "passedExams": [
+        "html3d"
+      ],
+      "watchedLessons": [
+        "design-system"
+      ],
+      "watchSessions": {
+        "design-system": {
+          "startedAt": "2026-05-22T00:45:49.285Z",
+          "eligibleAt": "2026-05-22T00:46:19.285Z",
+          "updatedAt": "2026-05-22T00:45:49.285Z"
+        },
+        "semantic-html": {
+          "startedAt": "2026-05-30T01:26:54.288Z",
+          "eligibleAt": "2026-05-30T01:27:24.289Z",
+          "updatedAt": "2026-05-30T01:26:54.289Z"
+        }
+      },
+      "examBestScores": {},
+      "certificateIssuedAt": null
+    },
+    {
+      "userId": 12,
+      "progress": 0,
+      "achievements": 0,
+      "completedLessons": [],
+      "passedExams": [],
+      "watchedLessons": [],
+      "watchSessions": {},
+      "examBestScores": {},
+      "certificateIssuedAt": null
+    }
+  ],
+  "activationCodes": [
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.795Z",
+      "code": "CC-BASIC-A01F9K",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-B12L7Q",
+      "planKey": "basic",
+      "used": true,
+      "usedBy": 7,
+      "usedAt": "2026-05-06T23:52:42.758Z"
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-C23M8R",
+      "planKey": "basic",
+      "used": true,
+      "usedBy": 8,
+      "usedAt": "2026-05-06T23:52:56.104Z"
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-D34N2T",
+      "planKey": "basic",
+      "used": true,
+      "usedBy": 9,
+      "usedAt": "2026-05-06T23:53:12.788Z"
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-E45P6V",
+      "planKey": "basic",
+      "used": true,
+      "usedBy": 10,
+      "usedAt": "2026-05-07T00:15:36.875Z"
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-F56Q1W",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-G67R4X",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-H78S9Y",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-J89T3Z",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-K90U5A",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-L11V7B",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-M22W8C",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-N33X4D",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-P44Y6E",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-Q55Z2F",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-R66A7G",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-S77B1H",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-T88C5J",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-U99D8K",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-BASIC-V10E3L",
+      "planKey": "basic",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-A13F7M",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-B24G9N",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-C35H2P",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-D46J6Q",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-E57K1R",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-F68L4S",
+      "planKey": "pro",
+      "used": true,
+      "usedBy": 2,
+      "usedAt": "2026-04-23T17:01:03.008Z"
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-G79M8T",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-H80N3U",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-J91P5V",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-K12Q7W",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-L23R1X",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-M34S6Y",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-N45T9Z",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-P56U2A",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-Q67V4B",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-R78W8C",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-S89X3D",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-T90Y5E",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-U11Z7F",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-PRO-V22A1G",
+      "planKey": "pro",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-A25B6H",
+      "planKey": "elite",
+      "used": true,
+      "usedBy": 10,
+      "usedAt": "2026-05-15T20:12:00.239Z"
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-B36C9J",
+      "planKey": "elite",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-C47D2K",
+      "planKey": "elite",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-D58E5L",
+      "planKey": "elite",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-E69F8M",
+      "planKey": "elite",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-F70G1N",
+      "planKey": "elite",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-G81H4P",
+      "planKey": "elite",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-H92J7Q",
+      "planKey": "elite",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-J13K3R",
+      "planKey": "elite",
+      "used": false,
+      "usedBy": null,
+      "usedAt": null
+    },
+    {
+      "disabled": false,
+      "createdAt": "2026-04-22T08:56:16.798Z",
+      "code": "CC-ELITE-K24L6S",
+      "planKey": "elite",
+      "used": true,
+      "usedBy": 11,
+      "usedAt": "2026-05-22T00:04:28.493Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "ef187c7de06cba23e08503d2f10b6d5ce5271a91f843185625a4c443cf5a1a59",
+      "userId": 2,
+      "sessionType": "user",
+      "expiresAt": "2026-05-04T22:19:27.914Z",
+      "createdAt": "2026-04-20T23:19:27.914Z"
+    },
+    {
+      "token": "12e77698f6defe0f75fd392a29cee0eaf7745847c80a146075bfefb140b533c8",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-21T11:22:58.857Z",
+      "createdAt": "2026-04-20T23:22:58.857Z"
+    },
+    {
+      "token": "b1aa429480b83d3ddd10954f02ddc775ef083aa09513fd93c7a0e52bd5f0443f",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-22T20:38:15.865Z",
+      "createdAt": "2026-04-22T08:38:15.865Z"
+    },
+    {
+      "token": "4d8faa96234dec0ff3c73000cfa98e1dbf3f58edaffc84fff84e0dff320d7d47",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-22T20:56:16.861Z",
+      "createdAt": "2026-04-22T08:56:16.861Z"
+    },
+    {
+      "token": "dfe06c50e1a3d198f9a2754e4c0bfcb45dc96eaed1199b211185bf446f1b5938",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-22T21:06:05.611Z",
+      "createdAt": "2026-04-22T09:06:05.611Z"
+    },
+    {
+      "token": "4bfaaf44e25c966a47c67f465e4be3874d9aed4cdf3f4928387dfa63bdbaec40",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-22T21:12:51.103Z",
+      "createdAt": "2026-04-22T09:12:51.103Z"
+    },
+    {
+      "token": "5607dbdeab52916b7af46ba6709c397195f39ba56c26160a8eb8a58bc58a88af",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-23T08:52:34.934Z",
+      "createdAt": "2026-04-22T20:52:34.934Z"
+    },
+    {
+      "token": "8d465db78a686f9e754c13abfc438c2562d4621e2e4d05c805236851e83dae0f",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-23T22:11:04.545Z",
+      "createdAt": "2026-04-23T11:11:04.545Z"
+    },
+    {
+      "token": "4cb64ca066dce5030e7fab1b5e6e74bfa6758a4a7d137668954a003967cd4b96",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-26T09:43:24.014Z",
+      "createdAt": "2026-04-25T21:43:24.014Z"
+    },
+    {
+      "token": "a3438f1af47f15c08ff0d93ff601579f60733dbb64b80520317bbd122d6bda16",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-28T08:05:52.374Z",
+      "createdAt": "2026-04-27T20:05:52.374Z"
+    },
+    {
+      "token": "8da145be9df1b03e9a7560ab3aaeaa417f7a31adb7f1e652e8023a79027ef5c3",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-30T09:26:07.573Z",
+      "createdAt": "2026-04-29T21:26:07.573Z"
+    },
+    {
+      "token": "b9bfea79251a54816fa5cb409a6af25ac83ce5635fac18c694e4d0fefa33466e",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-30T09:26:32.826Z",
+      "createdAt": "2026-04-29T21:26:32.826Z"
+    },
+    {
+      "token": "edfe7d6cfa4df2742241fd8700c8f6c0db82e896a985bbb48d7f584dcc4e6aae",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-30T09:26:59.986Z",
+      "createdAt": "2026-04-29T21:26:59.986Z"
+    },
+    {
+      "token": "a53cbfa8fda396fc85076750b777fb06f29d50dd36a37720614d67bce55b8de5",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-04-30T09:35:04.233Z",
+      "createdAt": "2026-04-29T21:35:04.233Z"
+    },
+    {
+      "token": "60d08af97c587cab4ba9f06ecaf5e6a139045f34e6d55558950e05cad9aa0ab7",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-05-07T11:33:24.775Z",
+      "createdAt": "2026-05-06T23:33:24.775Z"
+    },
+    {
+      "token": "6bf3849597de5438d8cd963c6e9395cf5035e528ba9f49239f0ea0be757cd991",
+      "userId": 7,
+      "sessionType": "user",
+      "expiresAt": "2026-05-20T23:52:42.653Z",
+      "createdAt": "2026-05-06T23:52:42.653Z"
+    },
+    {
+      "token": "4a0a58122e58d5ac24209060ef8088f2bff3a0b55c4f5e0131dd970c7cb8eb96",
+      "userId": 7,
+      "sessionType": "user",
+      "expiresAt": "2026-05-20T23:52:42.742Z",
+      "createdAt": "2026-05-06T23:52:42.742Z"
+    },
+    {
+      "token": "7fd525be708c17299eeb039e7fd51dd820fae7b44d2d9140e4bb97395cca9c63",
+      "userId": 8,
+      "sessionType": "user",
+      "expiresAt": "2026-05-20T23:52:55.995Z",
+      "createdAt": "2026-05-06T23:52:55.995Z"
+    },
+    {
+      "token": "2f3eff3562e2fcb7a6bf672656a6c0835d23e3ca4ed427a0b2d0f757484b2d9b",
+      "userId": 8,
+      "sessionType": "user",
+      "expiresAt": "2026-05-20T23:52:56.077Z",
+      "createdAt": "2026-05-06T23:52:56.077Z"
+    },
+    {
+      "token": "4961c6d62ac6e11658640064b69f6a0d3bab55aaa143a0ee239591a9b113b6aa",
+      "userId": 9,
+      "sessionType": "user",
+      "expiresAt": "2026-05-20T23:53:12.703Z",
+      "createdAt": "2026-05-06T23:53:12.703Z"
+    },
+    {
+      "token": "3a75b628b8fa9b2d658376aec74c9029ab1a494dfe2408b13138fd91a1d2ae94",
+      "userId": 9,
+      "sessionType": "user",
+      "expiresAt": "2026-05-20T23:53:12.771Z",
+      "createdAt": "2026-05-06T23:53:12.771Z"
+    },
+    {
+      "token": "301360285c581d266f9b3c4252c15cb15f8ce4f4b64363732c8922c07060f4cc",
+      "userId": 9,
+      "sessionType": "user",
+      "expiresAt": "2026-05-20T23:53:13.380Z",
+      "createdAt": "2026-05-06T23:53:13.380Z"
+    },
+    {
+      "token": "4409f23a270f5bad75f1ed9022106b2cf2f68615b5e9a5436bd1343ed13884d0",
+      "userId": 10,
+      "sessionType": "user",
+      "expiresAt": "2026-05-21T00:08:35.290Z",
+      "createdAt": "2026-05-07T00:08:35.290Z"
+    },
+    {
+      "token": "8ef3f7929ef9869f70c8541abd4805f1bbe12790e153d42998954912dc6d6b0b",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-05-13T08:51:37.277Z",
+      "createdAt": "2026-05-12T20:51:37.277Z"
+    },
+    {
+      "token": "125f1a1fdbe1ac831df34beb1bad1c985cf929aecb531e5505bd223384aea2f4",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-05-15T13:50:29.259Z",
+      "createdAt": "2026-05-15T01:50:29.259Z"
+    },
+    {
+      "token": "27a86ba7f26edc71a49335cc753983906150a24ec62cc5e7c9832206cab0caf4",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-05-16T07:59:25.147Z",
+      "createdAt": "2026-05-15T19:59:25.147Z"
+    },
+    {
+      "token": "60403765e213504cf1c66a96c072553107b1e1302b28ab90571eaf750d384af6",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-05-16T09:31:15.446Z",
+      "createdAt": "2026-05-15T21:31:15.446Z"
+    },
+    {
+      "token": "7e4b31f52ca0f17b99873c7f7667bb660eaa3baf8ea15fa6a09adc76d463c1c8",
+      "userId": 11,
+      "sessionType": "user",
+      "expiresAt": "2026-06-05T00:03:44.136Z",
+      "createdAt": "2026-05-22T00:03:44.136Z"
+    },
+    {
+      "token": "99c313e81e4e162d1ca95604393ec1ec6afdef368283c075ae0bf1a3e1d735b3",
+      "userId": null,
+      "sessionType": "admin",
+      "expiresAt": "2026-05-22T12:04:08.134Z",
+      "createdAt": "2026-05-22T00:04:08.134Z"
+    },
+    {
+      "token": "4c54696d65a80e0b89119ec6f635a086b93555ffc50b7efdb06bf8f1c4278a5f",
+      "userId": 12,
+      "sessionType": "user",
+      "expiresAt": "2026-06-21T00:18:13.895Z",
+      "createdAt": "2026-06-07T00:18:13.895Z"
+    }
+  ],
+  "counters": {
+    "userId": 12,
+    "supportId": 6,
+    "notificationId": 48,
+    "adminLogId": 23
+  },
+  "supportTickets": [
+    {
+      "status": "resolved",
+      "createdAt": "2026-04-22T20:03:16.868Z",
+      "updatedAt": "2026-05-15T01:52:49.197Z",
+      "adminReply": "",
+      "adminReplyAt": null,
+      "conversation": [
+        {
+          "authorType": "user",
+          "authorName": "AHLY PREPAID",
+          "message": "لانهللاااتاىرواتر",
+          "createdAt": "2026-04-22T20:03:16.868Z"
+        }
+      ],
+      "id": 1,
+      "userId": 2,
+      "name": "AHLY PREPAID",
+      "email": "qazwsx147@gmail.com",
+      "phone": "01280272177",
+      "subject": "مشكلة في كود التفعيل",
+      "message": "لانهللاااتاىرواتر"
+    },
+    {
+      "status": "resolved",
+      "createdAt": "2026-04-22T20:13:06.782Z",
+      "updatedAt": "2026-04-22T20:13:31.775Z",
+      "adminReply": "",
+      "adminReplyAt": null,
+      "conversation": [
+        {
+          "authorType": "user",
+          "authorName": "AHLY PREPAID",
+          "message": "4556475475",
+          "createdAt": "2026-04-22T20:13:06.782Z"
+        }
+      ],
+      "id": 2,
+      "userId": 2,
+      "name": "AHLY PREPAID",
+      "email": "qazwsx147@gmail.com",
+      "phone": "01280272177",
+      "subject": "مشكلة في تشغيل الفيديوهات",
+      "message": "4556475475"
+    },
+    {
+      "status": "resolved",
+      "createdAt": "2026-04-23T11:15:10.944Z",
+      "updatedAt": "2026-05-15T01:52:41.754Z",
+      "adminReply": "",
+      "adminReplyAt": null,
+      "conversation": [
+        {
+          "authorType": "user",
+          "authorName": ",ok,ko,k,ko",
+          "message": "ftvgybgybgb",
+          "createdAt": "2026-04-23T11:15:10.944Z"
+        }
+      ],
+      "id": 3,
+      "userId": 2,
+      "name": ",ok,ko,k,ko",
+      "email": "qazwsx1@gmail.com",
+      "phone": "01280272177",
+      "subject": "مشكلة في كود التفعيل",
+      "message": "ftvgybgybgb"
+    }
+  ],
+  "notifications": [
+    {
+      "read": true,
+      "createdAt": "2026-04-23T11:12:28.138Z",
+      "id": 1,
+      "userId": 2,
+      "title": "تم تسجيل طلب الاشتراك",
+      "message": "تم تجهيز طلب باقة Pro 3D. كود الطلب الخاص بك هو REQ-MOBDTZHL.",
+      "type": "info"
+    },
+    {
+      "read": true,
+      "createdAt": "2026-04-23T11:15:10.944Z",
+      "id": 2,
+      "userId": 2,
+      "title": "تم استلام طلب الدعم",
+      "message": "استلمنا تذكرتك رقم #3 بعنوان \"مشكلة في كود التفعيل\" وسنتابعها قريبًا.",
+      "type": "info"
+    },
+    {
+      "read": true,
+      "createdAt": "2026-04-23T11:16:26.095Z",
+      "id": 3,
+      "userId": 2,
+      "title": "تم تحديث حالة طلب الدعم",
+      "message": "تذكرتك رقم #3 أصبحت الآن: تم الحل.",
+      "type": "success"
+    },
+    {
+      "read": true,
+      "createdAt": "2026-04-23T17:00:16.284Z",
+      "id": 4,
+      "userId": 2,
+      "title": "تم تسجيل طلب الاشتراك",
+      "message": "تم تجهيز طلب باقة Pro 3D. كود الطلب الخاص بك هو REQ-MOBQ99GC.",
+      "type": "info"
+    },
+    {
+      "read": true,
+      "createdAt": "2026-04-23T17:01:03.059Z",
+      "id": 5,
+      "userId": 2,
+      "title": "تم تفعيل اشتراكك",
+      "message": "اشتراك Pro 3D أصبح مفعلًا الآن وينتهي في ٢٢‏/٧‏/٢٠٢٦.",
+      "type": "success"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-06T23:52:42.646Z",
+      "id": 21,
+      "userId": 7,
+      "title": "أهلاً بك في CodeCraft 3D",
+      "message": "تم إنشاء حسابك بنجاح. اختر باقتك وابدأ رحلتك داخل المنصة.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-06T23:52:42.750Z",
+      "id": 22,
+      "userId": 7,
+      "title": "تم تسجيل طلب الاشتراك",
+      "message": "تم تجهيز طلب باقة Starter. كود الطلب الخاص بك هو REQ-MOUPPQM6.",
+      "type": "info",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-06T23:52:42.758Z",
+      "id": 23,
+      "userId": 7,
+      "title": "تم تفعيل اشتراكك",
+      "message": "اشتراك Starter أصبح مفعلًا الآن وينتهي في ٦‏/٦‏/٢٠٢٦.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-06T23:52:55.990Z",
+      "id": 24,
+      "userId": 8,
+      "title": "أهلاً بك في CodeCraft 3D",
+      "message": "تم إنشاء حسابك بنجاح. اختر باقتك وابدأ رحلتك داخل المنصة.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-06T23:52:56.093Z",
+      "id": 25,
+      "userId": 8,
+      "title": "تم تسجيل طلب الاشتراك",
+      "message": "تم تجهيز طلب باقة Starter. كود الطلب الخاص بك هو REQ-MOUPQ0WT.",
+      "type": "info",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-06T23:52:56.104Z",
+      "id": 26,
+      "userId": 8,
+      "title": "تم تفعيل اشتراكك",
+      "message": "اشتراك Starter أصبح مفعلًا الآن وينتهي في ٦‏/٦‏/٢٠٢٦.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-06T23:53:12.697Z",
+      "id": 27,
+      "userId": 9,
+      "title": "أهلاً بك في CodeCraft 3D",
+      "message": "تم إنشاء حسابك بنجاح. اختر باقتك وابدأ رحلتك داخل المنصة.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-06T23:53:12.780Z",
+      "id": 28,
+      "userId": 9,
+      "title": "تم تسجيل طلب الاشتراك",
+      "message": "تم تجهيز طلب باقة Starter. كود الطلب الخاص بك هو REQ-MOUPQDSC.",
+      "type": "info",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-06T23:53:12.788Z",
+      "id": 29,
+      "userId": 9,
+      "title": "تم تفعيل اشتراكك",
+      "message": "اشتراك Starter أصبح مفعلًا الآن وينتهي في ٦‏/٦‏/٢٠٢٦.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": true,
+      "createdAt": "2026-05-07T00:08:35.282Z",
+      "id": 30,
+      "userId": 10,
+      "title": "أهلاً بك في CodeCraft 3D",
+      "message": "تم إنشاء حسابك بنجاح. اختر باقتك وابدأ رحلتك داخل المنصة.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": true,
+      "createdAt": "2026-05-07T00:08:56.503Z",
+      "id": 31,
+      "userId": 10,
+      "title": "تم تسجيل طلب الاشتراك",
+      "message": "تم تجهيز طلب باقة Starter. كود الطلب الخاص بك هو REQ-MOUQALYV.",
+      "type": "info",
+      "dedupeKey": ""
+    },
+    {
+      "read": true,
+      "createdAt": "2026-05-07T00:15:36.875Z",
+      "id": 32,
+      "userId": 10,
+      "title": "تم تفعيل اشتراكك",
+      "message": "اشتراك Starter أصبح مفعلًا الآن وينتهي في ٦‏/٦‏/٢٠٢٦.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-15T01:42:59.806Z",
+      "id": 33,
+      "userId": 10,
+      "title": "تم تسجيل طلب الاشتراك",
+      "message": "تم تجهيز طلب باقة Elite Academy. كود الطلب الخاص بك هو REQ-MP696DP9.",
+      "type": "info",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-15T01:52:25.823Z",
+      "id": 34,
+      "userId": 2,
+      "title": "تم تحديث حالة طلب الدعم",
+      "message": "تذكرتك رقم #1 أصبحت الآن: مفتوحة.",
+      "type": "info",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-15T01:52:41.754Z",
+      "id": 35,
+      "userId": 2,
+      "title": "تم تحديث حالة طلب الدعم",
+      "message": "تذكرتك رقم #3 أصبحت الآن: تم الحل.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-15T01:52:49.197Z",
+      "id": 36,
+      "userId": 2,
+      "title": "تم تحديث حالة طلب الدعم",
+      "message": "تذكرتك رقم #1 أصبحت الآن: تم الحل.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-15T20:12:00.239Z",
+      "id": 37,
+      "userId": 10,
+      "title": "تم تفعيل اشتراكك",
+      "message": "اشتراك Elite Academy أصبح مفعلًا الآن وينتهي في ١٥‏/٥‏/٢٠٢٧.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-22T00:03:44.132Z",
+      "id": 38,
+      "userId": 11,
+      "title": "أهلاً بك في CodeCraft 3D",
+      "message": "تم إنشاء حسابك بنجاح. اختر باقتك وابدأ رحلتك داخل المنصة.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-22T00:04:19.364Z",
+      "id": 39,
+      "userId": 11,
+      "title": "تم تسجيل طلب الاشتراك",
+      "message": "تم تجهيز طلب باقة Elite Academy. كود الطلب الخاص بك هو REQ-MPG5QG4K.",
+      "type": "info",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-22T00:04:28.494Z",
+      "id": 40,
+      "userId": 11,
+      "title": "تم تفعيل اشتراكك",
+      "message": "اشتراك Elite Academy أصبح مفعلًا الآن وينتهي في ٢٢‏/٥‏/٢٠٢٧.",
+      "type": "success",
+      "dedupeKey": ""
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-30T01:22:03.725Z",
+      "id": 41,
+      "userId": 7,
+      "title": "تنبيه مبكر للاشتراك",
+      "message": "اشتراك Starter سينتهي خلال 7 أيام بتاريخ ٦‏/٦‏/٢٠٢٦.",
+      "type": "info",
+      "dedupeKey": "subscription-expiring7-7-2026-06-05T23:52:42.758Z"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-30T01:22:03.725Z",
+      "id": 42,
+      "userId": 8,
+      "title": "تنبيه مبكر للاشتراك",
+      "message": "اشتراك Starter سينتهي خلال 7 أيام بتاريخ ٦‏/٦‏/٢٠٢٦.",
+      "type": "info",
+      "dedupeKey": "subscription-expiring7-8-2026-06-05T23:52:56.104Z"
+    },
+    {
+      "read": false,
+      "createdAt": "2026-05-30T01:22:03.725Z",
+      "id": 43,
+      "userId": 9,
+      "title": "تنبيه مبكر للاشتراك",
+      "message": "اشتراك Starter سينتهي خلال 7 أيام بتاريخ ٦‏/٦‏/٢٠٢٦.",
+      "type": "info",
+      "dedupeKey": "subscription-expiring7-9-2026-06-05T23:53:12.788Z"
+    },
+    {
+      "id": 44,
+      "userId": 7,
+      "title": "انتهى اشتراكك",
+      "message": "اشتراك Starter انتهى في ٦‏/٦‏/٢٠٢٦. جدد الاشتراك للاستمرار في الدروس والاختبارات.",
+      "type": "warning",
+      "read": false,
+      "dedupeKey": "subscription-expired-7-2026-06-05T23:52:42.758Z",
+      "createdAt": "2026-06-06T23:55:09.857Z"
+    },
+    {
+      "id": 45,
+      "userId": 8,
+      "title": "انتهى اشتراكك",
+      "message": "اشتراك Starter انتهى في ٦‏/٦‏/٢٠٢٦. جدد الاشتراك للاستمرار في الدروس والاختبارات.",
+      "type": "warning",
+      "read": false,
+      "dedupeKey": "subscription-expired-8-2026-06-05T23:52:56.104Z",
+      "createdAt": "2026-06-06T23:55:09.857Z"
+    },
+    {
+      "id": 46,
+      "userId": 9,
+      "title": "انتهى اشتراكك",
+      "message": "اشتراك Starter انتهى في ٦‏/٦‏/٢٠٢٦. جدد الاشتراك للاستمرار في الدروس والاختبارات.",
+      "type": "warning",
+      "read": false,
+      "dedupeKey": "subscription-expired-9-2026-06-05T23:53:12.788Z",
+      "createdAt": "2026-06-06T23:55:09.857Z"
+    },
+    {
+      "id": 47,
+      "userId": 12,
+      "title": "أهلاً بك في CodeCraft 3D",
+      "message": "تم إنشاء حسابك بنجاح. اختر باقتك وابدأ رحلتك داخل المنصة.",
+      "type": "success",
+      "read": false,
+      "dedupeKey": "",
+      "createdAt": "2026-06-07T00:18:13.884Z"
+    },
+    {
+      "id": 48,
+      "userId": 12,
+      "title": "تم تسجيل طلب الاشتراك",
+      "message": "تم تجهيز طلب باقة Starter. كود الطلب الخاص بك هو REQ-MQ31AG06.",
+      "type": "info",
+      "read": false,
+      "dedupeKey": "",
+      "createdAt": "2026-06-07T00:18:36.294Z"
+    }
+  ],
+  "adminActivityLog": [
+    {
+      "createdAt": "2026-04-23T11:11:04.552Z",
+      "id": 1,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-04-23T11:16:26.095Z",
+      "id": 2,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #3 إلى resolved."
+    },
+    {
+      "createdAt": "2026-04-25T21:43:24.020Z",
+      "id": 3,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-04-27T20:05:52.381Z",
+      "id": 4,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-04-29T21:26:07.575Z",
+      "id": 5,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-04-29T21:26:07.595Z",
+      "id": 6,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #4 إلى in_progress مع إضافة رد إداري."
+    },
+    {
+      "createdAt": "2026-04-29T21:26:07.614Z",
+      "id": 7,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #4 إلى closed مع إضافة رد إداري."
+    },
+    {
+      "createdAt": "2026-04-29T21:26:32.828Z",
+      "id": 8,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-04-29T21:26:32.858Z",
+      "id": 9,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #5 إلى in_progress مع إضافة رد إداري."
+    },
+    {
+      "createdAt": "2026-04-29T21:26:32.876Z",
+      "id": 10,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #5 إلى closed مع إضافة رد إداري."
+    },
+    {
+      "createdAt": "2026-04-29T21:26:59.990Z",
+      "id": 11,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-04-29T21:27:00.000Z",
+      "id": 12,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #6 إلى in_progress مع إضافة رد إداري."
+    },
+    {
+      "createdAt": "2026-04-29T21:27:00.011Z",
+      "id": 13,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #6 إلى closed مع إضافة رد إداري."
+    },
+    {
+      "createdAt": "2026-04-29T21:35:04.241Z",
+      "id": 14,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-05-06T23:33:24.780Z",
+      "id": 15,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-05-12T20:51:37.286Z",
+      "id": 16,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-05-15T01:50:29.263Z",
+      "id": 17,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-05-15T01:52:25.823Z",
+      "id": 18,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #1 إلى open."
+    },
+    {
+      "createdAt": "2026-05-15T01:52:41.754Z",
+      "id": 19,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #3 إلى resolved."
+    },
+    {
+      "createdAt": "2026-05-15T01:52:49.197Z",
+      "id": 20,
+      "actor": "admin",
+      "action": "تحديث تذكرة دعم",
+      "details": "تم تغيير حالة التذكرة #1 إلى resolved."
+    },
+    {
+      "createdAt": "2026-05-15T19:59:25.151Z",
+      "id": 21,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-05-15T21:31:15.451Z",
+      "id": 22,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    },
+    {
+      "createdAt": "2026-05-22T00:04:08.140Z",
+      "id": 23,
+      "actor": "admin",
+      "action": "تسجيل دخول",
+      "details": "تم تسجيل دخول الأدمن إلى لوحة الإدارة."
+    }
+  ],
+  "loginAttempts": [
+    {
+      "email": "457039320@giza6.moe.edu.eg",
+      "failedCount": 3,
+      "lockedUntil": null,
+      "lastAttemptAt": "2026-06-07T00:17:23.326Z"
+    }
+  ]
+}
